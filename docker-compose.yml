@@ -1,0 +1,10 @@
+services:
+  smtp_to_mattermost:
+    build:
+      context: .
+    container_name: smtp_to_mattermost
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "2525:2525"

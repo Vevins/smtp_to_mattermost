@@ -51,6 +51,13 @@ docker run \
   vevin/smtp_to_mattermost
 ```
 
+Или через `docker compose`:
+
+```bash
+cp .env.example .env
+docker compose up --build
+```
+
 После этого приложение можно настроить на отправку уведомлений по адресу:
 
 ```text
