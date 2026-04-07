@@ -54,7 +54,7 @@ docker run \
 Или через `docker compose`:
 
 ```bash
-cp .env.example .env
+cp env.example .env
 docker compose up --build
 ```
 
@@ -75,7 +75,7 @@ localhost:2525
 Запуск локально через Go:
 
 ```bash
-cp .env.example .env
+cp env.example .env
 go mod tidy
 go test ./...
 go run .
